@@ -4,7 +4,7 @@ import "./globals.css";
 import Silk from "../components/Silk";
 import SmoothScroll from "../components/SmoothScroll";
 import CustomCursor from "../components/CustomCursor";
-
+import NavBar from "@/components/layout/navBar";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -30,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <NavBar />
         <CustomCursor />
         <Silk
           speed={3.3}
